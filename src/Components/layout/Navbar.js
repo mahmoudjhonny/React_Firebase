@@ -9,20 +9,23 @@ const Navbar = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#c2185b", padding: "5px" }}
+      sx={{
+        backgroundColor: "#c2185b",
+        padding: "5px",
+      }}
     >
-      <Toolbar>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <IconButton aria-label="logo" sx={{ color: "#fce4ec" }}>
           <LocalFireDepartment />
+          <Typography
+            variant="h5"
+            component={Link}
+            to="/"
+            sx={{ color: "#fce4ec", marginLeft: "5px" }}
+          >
+            Firebase App
+          </Typography>
         </IconButton>
-        <Typography
-          variant="h5"
-          component={Link}
-          to="/"
-          sx={{ color: "#fce4ec", flexGrow: 1, textDecoration: "none" }}
-        >
-          Firebase App
-        </Typography>
         <Stack spacing={3} direction="row" sx={{ marginRight: "15px" }}>
           <SigedOutLinks />
           <SigedInLinks />

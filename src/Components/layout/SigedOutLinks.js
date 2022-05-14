@@ -10,13 +10,13 @@ const SigedOutLinks = () => {
         direction="row"
         sx={{ display: "flex", alignItems: "center" }}
       >
-        <NavLink to="/">
+        <NavLink to="/signup">
           <Typography variant="h6" component="p" sx={{ color: "#ffffff" }}>
             Signup
           </Typography>
         </NavLink>
-        <NavLink to="/">
-          <Typography variant="h6" component="p" sx={{ color: "#ffffff" }}>
+        <NavLink to="/signin">
+          <Typography variant="h6" sx={{ color: "#ffffff" }}>
             Login
           </Typography>
         </NavLink>

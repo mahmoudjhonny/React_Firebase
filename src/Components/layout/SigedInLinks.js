@@ -10,7 +10,7 @@ const SigedInLinks = () => {
       direction="row"
       sx={{ display: "flex", alignItems: "center" }}
     >
-      <NavLink to="/">
+      <NavLink to="/create">
         <Typography variant="h6" component="p" sx={{ color: "#ffffff" }}>
           New Project
         </Typography>
